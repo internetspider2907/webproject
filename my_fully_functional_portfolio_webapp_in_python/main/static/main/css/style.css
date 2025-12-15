@@ -1,0 +1,90 @@
+/* Futuristic Portfolio Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+    color: #ffffff;
+    margin: 0;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    background: linear-gradient(45deg, #00d4ff, #ff0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 50px;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+section {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #ffea00;
+    border-bottom: 2px solid #ff0080;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+a {
+    color: #00d4ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #00d4ff;
+    border-radius: 25px;
+    background: transparent;
+}
+
+a:hover {
+    background: #00d4ff;
+    color: #0d0d0d;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Animation for sections */
+section {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
